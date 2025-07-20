@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+:root {
+  --text-p: 400 16px / 1.5 "Montserrat", sans-serif;
+  --text-h: 600 24px / 1.33 "Montserrat", sans-serif;
+  --text-btn: 500 16px / 1.5 "Montserrat", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ======= task-1 ======= */
+#categories {
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  background: #fff;
+}
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  background: #f6f6fe;
+  margin-bottom: 24px;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.item h2 {
+  font: var(--text-h);
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.item ul li {
+  font: var(--text-p);
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.item ul li:last-child {
+  margin-bottom: 0;
+}
+/* ======= /task-1 ======= */
+
+/* ======= task-2 ======= */
+.gallery {
+  max-width: 1440px;
+  background: #fff;
+  padding: 100px 156px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.image-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.gallery img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+/* ======= /task-2 ======= */
+
+/* ======= task-3 ======= */
+.your-name {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  background: #fff;
+}
+#name-input {
+  font: var(--text-p);
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+.your-name .title {
+  font: var(--text-h);
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* ======= /task-3 ======= */
+
+/* ======= task-4 ======= */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  padding: 8px 16px;
+  margin-top: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 250ms linear;
+}
+
+.login-form input:hover {
+  border-color: #000000;
+}
+
+.form-btn {
+  padding: 8px 16px;
+  margin-top: 8px;
+  width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: background-color 250ms linear;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #6c8cff;
+}
+/* ======= /task-4 ======= */
+
+/* ======= task-5 ======= */
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.widget p {
+  font: var(--text-p);
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+.change-color {
+  font: var(--text-btn);
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+}
+/* ======= /task-5 ======= */
